@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="POC_Specflow.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <Editor AutomationId="num1" Text="{Binding Number1}" />
+        <Editor AutomationId="num2" Text="{Binding Number2}" />
+        <Button
+            AutomationId="btnAdd"
+            Command="{Binding AddCommand}"
+            Text="Add" />
+        <Label AutomationId="result" Text="{Binding Result}" />
+    </StackLayout>
+
+</ContentPage>
